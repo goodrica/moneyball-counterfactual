@@ -1,0 +1,4 @@
+pandas>=2.0
+numpy>=1.24
+pybaseball>=2.2.7
+pytest>=7.0
