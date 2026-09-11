@@ -32,7 +32,7 @@ Deployed via GitHub Pages (this repo).
 
 ```bash
 pip install -r requirements.txt
-python src/download_data.py   # pulls Lahman + FanGraphs WAR, caches to data/
+python src/download_data.py   # pulls Lahman + bWAR, derives payroll, runs data-contract tests
 python src/run_experiment.py  # runs the panel
 python src/build_site.py      # renders site/index.html + site/data/*.json
 ```
@@ -41,7 +41,7 @@ python src/build_site.py      # renders site/index.html + site/data/*.json
 
 🚧 Planning complete — see [docs/PLAN.md](docs/PLAN.md) for the full research design.
 
-- [ ] Phase 0: Data acquisition (Lahman, FanGraphs WAR)
+- [x] Phase 0: Data acquisition (Lahman + bWAR; payroll derived; 22/22 data-contract tests pass)
 - [ ] Phase 1: Valuation engine (old/new salary regressions)
 - [ ] Phase 2: Roster optimizer
 - [ ] Phase 3: Outcome estimator
@@ -51,6 +51,6 @@ python src/build_site.py      # renders site/index.html + site/data/*.json
 
 ## Data sources
 
-- [Lahman Database](https://www.seanlahman.com/baseball-archive-statistics) — batting/pitching/salaries 1985–2024
-- [FanGraphs](https://www.fangraphs.com) — fWAR, wRC+, FIP (via `pybaseball`)
-- [Baseball-Reference](https://www.baseball-reference.com) — bWAR fallback
+- [Lahman Database](https://github.com/cbwinslow/baseballdatabank) (SHA: `a0b6f52`) — batting/pitching counting stats, Teams W-L/RS/RA, Salaries for 1985–2002 training window
+- [Baseball-Reference WAR](https://www.baseball-reference.com) via `pybaseball.bwar_bat` / `bwar_pitch` — WAR, salary, position runs through 2024+
+- Derived payroll (`data/payroll.csv`) — 30 teams/year, 2003–2024

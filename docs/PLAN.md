@@ -102,11 +102,10 @@ team_runs_estimate = linear-weights-style conversion of the roster's stat line
 
 | Dataset | Source | What it gives |
 |---|---|---|
-| Lahman Database | seanlahman.com / GitHub `chadwickbureau` mirrors | Batting, Pitching, Fielding, Salaries 1985–2024, master name/ID table |
-| FanGraphs leaderboards | `pybaseball.fangraphs_*` | fWAR, wRC+, FIP, SIERA per player-season (free HTML tables) |
-| Baseball-Reference WAR | `pybaseball.bwar_bat` / `bwar_pitch` | bWAR fallback (different flavor of WAR, good cross-check) |
-| Team seasons | Lahman `Teams.csv` | Real W-L, RS, RA, payroll per team-season |
-| (v2 only) Retrosheet event files | retrosheet.org | Event-level game simulation if we ever go past Pythagenpat |
+| Lahman Database | SHA-pinned mirror `cbwinslow/baseballdatabank` @ `a0b6f52` | Batting/Pitching counting stats (AVG, HR, RBI, ERA, W-L), Teams W/L/RS/RA, People, Awards; Salaries for 1985–2002 training window only |
+| Baseball-Reference WAR | `pybaseball.bwar_bat` / `bwar_pitch` | bWAR (park-adjusted), salary, PA/IP, position-level runs — **covers 2003–2024+**; this is the modern model's stat source AND the payroll budget source |
+| Derived payroll | `data/payroll.csv` (sum bWAR player salaries × team × year) | 30 teams/year, 2003–2026 |
+| (v2 optional) FanGraphs | `pybaseball` leaderboards | wRC+, FIP, SIERA — not needed for v1; bWAR carries sufficient WAR equivalent |
 
 All reachable without API keys. `pybaseball` pulls FanGraphs via HTML scraping; rate-limit politely, cache to CSV.
 
