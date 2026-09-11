@@ -2,3 +2,5 @@ pandas>=2.0
 numpy>=1.24
 pybaseball>=2.2.7
 pytest>=7.0
+scikit-learn>=1.3
+joblib>=1.4
