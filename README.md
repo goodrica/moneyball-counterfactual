@@ -39,12 +39,12 @@ python src/build_site.py      # renders site/index.html + site/data/*.json
 
 ## Status
 
-🚧 Planning complete — see [docs/PLAN.md](docs/PLAN.md) for the full research design.
+🚧 Pipeline through Phase 3 complete — see [docs/PLAN.md](docs/PLAN.md) for the full research design.
 
 - [x] Phase 0: Data acquisition (Lahman + bWAR; payroll derived; 22/22 data-contract tests pass)
-- [ ] Phase 1: Valuation engine (old/new salary regressions)
-- [ ] Phase 2: Roster optimizer
-- [ ] Phase 3: Outcome estimator
+- [x] Phase 1: Valuation engine (old/new salary regressions)
+- [x] Phase 2: Roster optimizer (+ 2015 pilot panel)
+- [x] Phase 3: Outcome estimator (+ 2010–2021 validation panel)
 - [ ] Phase 4: Experiment panel
 - [ ] Phase 5: Static site
 - [ ] Phase 6: Player-level insights
