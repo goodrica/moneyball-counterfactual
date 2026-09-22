@@ -1,0 +1,14 @@
+ year champ  champ_wins champ_rank_actual_war champ_rank_new_arm champ_rank_old_arm best_on_paper_team
+ 1990   CIN        91.0                     2                 18                 19                OAK
+ 1991   MIN        95.0                     1                 13                 12                MIN
+ 1992   TOR        96.0                     3                  4                  3                MIL
+ 1993   TOR        95.0                     4                  1                  1                ATL
+ 1995   ATL        90.0                     5                  3                  3                CLE
+ 1996   NYY        92.0                     3                  4                  4                CLE
+ 1997   FLA        92.0                    12                  7                  7                NYY
+ 1998   NYY       114.0                     1                  2                  2                NYY
+ 1999   NYY        98.0                     1                  1                  1                NYY
+
+Champs ranked top-3 by actual bWAR: 6/9
+Champs the NEW-arm would have built top-3: 4/9
+Champs the OLD-arm would have built top-3: 5/9

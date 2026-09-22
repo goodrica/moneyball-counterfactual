@@ -1,0 +1,40 @@
+[skip] 2010: cached
+[skip] 2011: cached
+[skip] 2012: cached
+[skip] 2013: cached
+[skip] 2014: cached
+[skip] 2015: cached
+[skip] 2016: cached
+[skip] 2017: cached
+[skip] 2018: cached
+[skip] 2019: cached
+[skip] 2020: cached
+[skip] 2021: cached
+[skip] 2022: cached
+[skip] 2023: cached
+[skip] 2024: cached
+
+=== panel summary (2010-2024, 450 team-seasons) ===
+mean wins gap NEW-OLD: +0.22 (across-team std 7.81)
+estimator r(actual_est, real W) = 0.913
+mean NEW-arm roster overlap with actual: 2.7%
+mean OLD-arm roster overlap with actual: 2.9%
+[skip] 1988: cached
+[skip] 1989: cached
+[skip] 1990: cached
+[skip] 1991: cached
+[skip] 1992: cached
+[skip] 1993: cached
+[skip] 1994: cached
+[skip] 1995: cached
+[skip] 1996: cached
+[skip] 1997: cached
+[skip] 1998: cached
+[skip] 1999: cached
+
+=== control summary (1988-1999, 330 team-seasons) ===
+mean wins gap NEW-OLD: -0.55 (across-team std 5.06)
+estimator r(actual_est, real W) = 0.806
+mean NEW-arm roster overlap with actual: 3.3%
+mean OLD-arm roster overlap with actual: 3.3%
+wrote site/index.html (116 KB)

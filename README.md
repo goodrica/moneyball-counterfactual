@@ -39,15 +39,30 @@ python src/build_site.py      # renders site/index.html + site/data/*.json
 
 ## Status
 
-🚧 Pipeline through Phase 3 complete — see [docs/PLAN.md](docs/PLAN.md) for the full research design.
+✅ Pipeline complete through Phase 6 + the Phase 7 World Series check. Live site: https://goodrica.github.io/moneyball-counterfactual/
 
-- [x] Phase 0: Data acquisition (Lahman + bWAR; payroll derived; 22/22 data-contract tests pass)
+- [x] Phase 0: Data acquisition (Lahman 2025 release via CRAN + bWAR; payroll derived; data-contract tests pass)
 - [x] Phase 1: Valuation engine (old/new salary regressions)
 - [x] Phase 2: Roster optimizer (+ 2015 pilot panel)
-- [x] Phase 3: Outcome estimator (+ 2010–2021 validation panel)
-- [ ] Phase 4: Experiment panel
-- [ ] Phase 5: Static site
-- [ ] Phase 6: Player-level insights
+- [x] Phase 3: Outcome estimator (+ 2010–2021 validation panel; r=0.91 vs real wins)
+- [x] Phase 4: Experiment panel — **league-wide exclusive draft** per seed (the pilot's
+      independent-team design let every team draft the same stars); 2010–2024 panel +
+      1988–1999 era backtest, 100 seeds, mean±std
+- [x] Phase 5: Static site (single-file HTML, dependency-free SVG charts, GitHub Pages)
+- [x] Phase 6: Player-level insights (results/player_insights*.csv)
+- [x] Phase 7: World Series winners 1990–1999 vs "best on paper" (results/world_series_1990s.csv)
+
+**Headline (honest):** with a shared player pool, the NEW−OLD win gap averages **+0.22
+wins** across 2010–24 (t≈+0.6 — statistically zero), and **−0.55** in the 1988–99
+control (t≈−2.0 — old prices slightly better in their own era, as expected when
+re-drafting from a pool the old market itself priced). Rebuilding teams under old-school
+valuation does NOT lose 5–15 wins; the philosophy gap in *roster construction* is near
+zero once prices are market-learned. The tercile story (H2, inverted): low-payroll teams
+do **worse** under old prices (−7.1 wins) — old-market prices are compressed, so poor
+teams can't exploit bargains — while high-payroll teams do marginally **better** with
+old prices (+2.8): flat pricing makes stars look affordable. The Moneyball core survives
+where it always lived — in *player pricing*: within equal-WAR bins the old model
+systematically discounts walk-heavy players (r≈−0.10, negative in 7/8 bins).
 
 ## Data sources
 
