@@ -38,15 +38,45 @@ BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(BASE, "data")
 RESULTS = os.path.join(BASE, "results")
 
-LAH_TO_BWAR = {"CHA": "CHW", "CHN": "CHC", "FLA": "MIA", "KCA": "KCR",
-               "LAN": "LAD", "NYA": "NYY", "NYN": "NYM", "SDN": "SDP",
-               "SFN": "SFG", "SLN": "STL", "TBA": "TBR", "WAS": "WSN"}
+# Lahman teamIDs differ from bWAR/MLB.com IDs for many franchises, and some
+# aliases are era-dependent (Marlins: FLO in Lahman 1993-2011, but bWAR says
+# FLA through 2011 and MIA from 2012; Brewers ML4 1998 -> MIL). We resolve
+# per-year by matching against the payroll (bWAR) team-ID set.
+TEAM_ALIASES = {
+    "CHA": {"CHW"}, "CHN": {"CHC"}, "KCA": {"KCR"}, "LAN": {"LAD"},
+    "NYA": {"NYY"}, "NYN": {"NYM"}, "SDN": {"SDP"}, "SFN": {"SFG"},
+    "SLN": {"STL"}, "WAS": {"WSN"},
+    "FLO": {"MIA", "FLA"}, "ML4": {"MIL"},
+    # era pairs: lahman TBA/TBD/ANA/CAL vs bWAR TBD/TBR/ANA/LAA
+    "TBA": {"TBR", "TBD"}, "TBD": {"TBD", "TBR"},
+    "ANA": {"ANA", "LAA"}, "CAL": {"ANA", "LAA"}, "ARI": {"ARI"},
+}
+
+
+def resolve_team_ids(lah_ids, target_ids):
+    """Map each Lahman teamID to the ID used in target (bWAR) set for that year."""
+    tset = set(target_ids)
+    mapping = {}
+    for lid in set(lah_ids):
+        if lid in tset:
+            mapping[lid] = lid
+            continue
+        for alt in TEAM_ALIASES.get(lid, ()):
+            if alt in tset:
+                mapping[lid] = alt
+                break
+        else:
+            mapping[lid] = lid  # unmatched; will surface as NaN
+    return mapping
 
 
 def _teams_bwar_ids(year):
-    t = pd.read_csv(os.path.join(DATA, "lahman", "Teams.csv"))
+    import pandas as _pd
+    t = _pd.read_csv(os.path.join(DATA, "lahman", "Teams.csv"))
     t = t[t["yearID"] == year].copy()
-    t["teamID"] = t["teamID"].replace(LAH_TO_BWAR)
+    p = _pd.read_csv(os.path.join(DATA, "payroll.csv"))
+    p = p[p["yearID"] == year]["teamID"].unique()
+    t["teamID"] = t["teamID"].map(resolve_team_ids(t["teamID"], p))
     return t.set_index("teamID")
 
 

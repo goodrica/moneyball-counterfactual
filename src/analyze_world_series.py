@@ -32,20 +32,21 @@ BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(BASE, "data")
 RESULTS = os.path.join(BASE, "results")
 
-LAH_TO_BWAR = {"CHA": "CHW", "CHN": "CHC", "FLA": "MIA", "KCA": "KCR",
-               "LAN": "LAD", "NYA": "NYY", "NYN": "NYM", "SDN": "SDP",
-               "SFN": "SFG", "SLN": "STL", "TBA": "TBR", "WAS": "WSN"}
+import run_experiment as rx  # reuse the dynamic Lahman->bWAR team resolver
 
 
 def ws_winners(start, end):
     sp = pd.read_csv(os.path.join(DATA, "lahman", "SeriesPost.csv"))
     ws = sp[(sp["round"] == "WS") & sp["yearID"].between(start, end)].copy()
-    ws["teamIDwinner"] = ws["teamIDwinner"].replace(LAH_TO_BWAR)
-    ws["teamIDloser"] = ws["teamIDloser"].replace(LAH_TO_BWAR)
-    # one row per WS: winner + loser columns (no mirrored row)
-    out = ws[["yearID", "teamIDwinner", "teamIDloser"]].rename(
-        columns={"teamIDwinner": "champ", "teamIDloser": "loser"})
-    return out
+    # resolve per-year: Lahman FLO -> bWAR FLA (pre-2012) / MIA (2012+)
+    champ, loser = [], []
+    for _, r in ws.iterrows():
+        target = sorted(season_table(int(r["yearID"]))["team"].unique())
+        m = rx.resolve_team_ids([r["teamIDwinner"], r["teamIDloser"]], target)
+        champ.append(m[r["teamIDwinner"]])
+        loser.append(m[r["teamIDloser"]])
+    ws["champ"], ws["loser"] = champ, loser
+    return ws[["yearID", "champ", "loser"]]
 
 
 def season_table(year):
