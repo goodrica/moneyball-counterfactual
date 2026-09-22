@@ -32,19 +32,20 @@ BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(BASE, "data")
 RESULTS = os.path.join(BASE, "results")
 
-LAH_TO_BWAR = {"CHA": "CHW", "CHN": "CHC", "KCA": "KCR", "LAN": "LAD",
-               "NYA": "NYY", "NYN": "NYM", "SDN": "SDP", "SFN": "SFG",
-               "SLN": "STL", "TBA": "TBR", "WAS": "WSN"}
+LAH_TO_BWAR = {"CHA": "CHW", "CHN": "CHC", "FLA": "MIA", "KCA": "KCR",
+               "LAN": "LAD", "NYA": "NYY", "NYN": "NYM", "SDN": "SDP",
+               "SFN": "SFG", "SLN": "STL", "TBA": "TBR", "WAS": "WSN"}
 
 
 def ws_winners(start, end):
     sp = pd.read_csv(os.path.join(DATA, "lahman", "SeriesPost.csv"))
     ws = sp[(sp["round"] == "WS") & sp["yearID"].between(start, end)].copy()
     ws["teamIDwinner"] = ws["teamIDwinner"].replace(LAH_TO_BWAR)
-    win = ws.loc[ws["wins"] > ws["losses"], ["yearID", "teamIDwinner"]]
-    lose = ws.loc[ws["wins"] < ws["losses"], ["yearID", "teamIDwinner"]]
-    lose.columns = ["yearID", "loser"]
-    return win.merge(lose, on="yearID")
+    ws["teamIDloser"] = ws["teamIDloser"].replace(LAH_TO_BWAR)
+    # one row per WS: winner + loser columns (no mirrored row)
+    out = ws[["yearID", "teamIDwinner", "teamIDloser"]].rename(
+        columns={"teamIDwinner": "champ", "teamIDloser": "loser"})
+    return out
 
 
 def season_table(year):
@@ -64,7 +65,7 @@ def main():
     winners = ws_winners(args.start, args.end)
     rows = []
     for _, w in winners.iterrows():
-        year, champ, runner = int(w["yearID"]), w["teamIDwinner"], w["loser"]
+        year, champ, runner = int(w["yearID"]), w["champ"], w["loser"]
         df = season_table(year)
         df = df.sort_values("actual_war", ascending=False).reset_index(drop=True)
         df["rank_war"] = np.arange(1, len(df) + 1)

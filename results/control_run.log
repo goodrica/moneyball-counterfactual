@@ -1,1 +1,452 @@
 [panel] 1988: building pool...
+  ATL: real 54 | est(act) 63.2 | OLD 76.2±24.6 | NEW 72.1±27.8 | gap -4.1
+  BAL: real 54 | est(act) 62.4 | OLD 78.5±25.0 | NEW 78.9±26.6 | gap +0.5
+  BOS: real 89 | est(act) 97.9 | OLD 100.7±22.5 | NEW 98.9±23.3 | gap -1.9
+  CAL: real 75 | est(act) 64.4 | OLD 77.2±21.0 | NEW 73.6±27.3 | gap -3.6
+  CHC: real 77 | est(act) 84.9 | OLD 93.3±23.6 | NEW 89.8±24.8 | gap -3.5
+  CHW: real 71 | est(act) 64.0 | OLD 25.0±9.6 | NEW 29.7±16.7 | gap +4.6
+  CIN: real 87 | est(act) 67.8 | OLD 47.0±18.9 | NEW 42.6±21.6 | gap -4.4
+  CLE: real 78 | est(act) 71.7 | OLD 42.6±15.1 | NEW 38.4±20.1 | gap -4.2
+  DET: real 88 | est(act) 71.9 | OLD 80.6±25.5 | NEW 83.5±26.0 | gap +2.9
+  HOU: real 82 | est(act) 75.6 | OLD 64.3±22.4 | NEW 61.0±27.1 | gap -3.3
+  KCR: real 84 | est(act) 86.4 | OLD 99.0±20.5 | NEW 98.3±25.4 | gap -0.8
+  LAD: real 94 | est(act) 81.9 | OLD 101.3±20.6 | NEW 96.0±25.7 | gap -5.3
+  MIL: real nan | est(act) 72.6 | OLD 49.3±18.1 | NEW 44.7±22.8 | gap -4.6
+  MIN: real 91 | est(act) 89.1 | OLD 84.4±24.9 | NEW 80.7±28.0 | gap -3.7
+  MON: real 81 | est(act) 82.1 | OLD 44.8±15.6 | NEW 39.9±21.4 | gap -4.9
+  NYM: real 100 | est(act) 95.1 | OLD 105.6±23.2 | NEW 104.5±23.8 | gap -1.1
+  NYY: real 85 | est(act) 81.0 | OLD 116.6±18.1 | NEW 115.7±21.9 | gap -1.0
+  OAK: real 104 | est(act) 84.9 | OLD 65.6±22.8 | NEW 67.8±29.0 | gap +2.1
+  PHI: real 65 | est(act) 63.0 | OLD 89.7±23.8 | NEW 89.7±26.5 | gap -0.0
+  PIT: real 85 | est(act) 74.8 | OLD 18.3±7.7 | NEW 25.4±13.8 | gap +7.1
+  SDP: real 83 | est(act) 71.9 | OLD 57.0±20.4 | NEW 53.2±23.7 | gap -3.8
+  SEA: real 68 | est(act) 81.2 | OLD 36.0±12.3 | NEW 37.1±21.0 | gap +1.1
+  SFG: real 83 | est(act) 85.8 | OLD 53.3±20.7 | NEW 50.2±23.3 | gap -3.1
+  STL: real 76 | est(act) 79.5 | OLD 70.2±21.6 | NEW 71.0±28.2 | gap +0.9
+  TEX: real 70 | est(act) 63.6 | OLD 21.8±8.8 | NEW 30.6±16.7 | gap +8.8
+  TOR: real 87 | est(act) 83.3 | OLD 79.9±24.2 | NEW 80.6±27.1 | gap +0.7
+[panel] 1989: building pool...
+  ATL: real 63 | est(act) 75.7 | OLD 33.0±11.9 | NEW 36.6±16.0 | gap +3.6
+  BAL: real 87 | est(act) 66.2 | OLD 29.7±11.4 | NEW 33.2±13.3 | gap +3.5
+  BOS: real 83 | est(act) 88.3 | OLD 109.7±18.4 | NEW 107.7±20.2 | gap -2.0
+  CAL: real 91 | est(act) 70.7 | OLD 80.9±24.4 | NEW 84.7±24.5 | gap +3.8
+  CHC: real 93 | est(act) 80.4 | OLD 43.9±17.7 | NEW 47.1±22.0 | gap +3.3
+  CHW: real 69 | est(act) 66.7 | OLD 21.8±7.3 | NEW 31.2±16.1 | gap +9.4
+  CIN: real 75 | est(act) 60.8 | OLD 51.0±19.9 | NEW 50.5±23.3 | gap -0.5
+  CLE: real 73 | est(act) 73.8 | OLD 48.1±18.7 | NEW 46.8±21.2 | gap -1.2
+  DET: real 59 | est(act) 58.3 | OLD 82.8±21.6 | NEW 87.5±25.6 | gap +4.6
+  HOU: real 86 | est(act) 77.5 | OLD 84.1±25.4 | NEW 83.2±28.2 | gap -0.9
+  KCR: real 92 | est(act) 88.8 | OLD 90.8±22.6 | NEW 92.4±24.6 | gap +1.6
+  LAD: real 77 | est(act) 70.2 | OLD 112.0±18.1 | NEW 108.7±18.5 | gap -3.3
+  MIL: real nan | est(act) 68.3 | OLD 53.3±20.1 | NEW 52.9±22.9 | gap -0.3
+  MIN: real 80 | est(act) 81.2 | OLD 95.0±23.3 | NEW 95.0±22.4 | gap +0.0
+  MON: real 81 | est(act) 79.6 | OLD 49.9±20.8 | NEW 49.7±23.4 | gap -0.2
+  NYM: real 87 | est(act) 89.1 | OLD 105.2±23.3 | NEW 101.2±23.2 | gap -4.0
+  NYY: real 74 | est(act) 83.8 | OLD 78.4±25.7 | NEW 75.3±27.8 | gap -3.0
+  OAK: real 99 | est(act) 90.7 | OLD 90.8±26.7 | NEW 90.8±24.2 | gap -0.0
+  PHI: real 67 | est(act) 78.9 | OLD 39.6±13.1 | NEW 39.0±18.6 | gap -0.6
+  PIT: real 74 | est(act) 63.6 | OLD 60.0±22.2 | NEW 57.1±23.4 | gap -2.9
+  SDP: real 89 | est(act) 75.8 | OLD 76.0±24.2 | NEW 74.2±28.2 | gap -1.9
+  SEA: real 73 | est(act) 79.2 | OLD 38.4±13.0 | NEW 38.6±18.9 | gap +0.2
+  SFG: real 92 | est(act) 76.6 | OLD 73.1±23.5 | NEW 66.3±24.3 | gap -6.8
+  STL: real 86 | est(act) 83.5 | OLD 91.7±21.8 | NEW 86.7±26.5 | gap -5.0
+  TEX: real 83 | est(act) 89.5 | OLD 51.9±17.6 | NEW 46.4±22.8 | gap -5.5
+  TOR: real 89 | est(act) 89.7 | OLD 91.6±23.9 | NEW 93.6±23.4 | gap +2.0
+[panel] 1990: building pool...
+  ATL: real 65 | est(act) 77.8 | OLD 49.2±20.7 | NEW 45.7±23.8 | gap -3.6
+  BAL: real 76 | est(act) 67.4 | OLD 22.7±8.0 | NEW 30.4±18.2 | gap +7.7
+  BOS: real 88 | est(act) 85.8 | OLD 93.6±25.6 | NEW 89.0±33.9 | gap -4.6
+  CAL: real 80 | est(act) 71.5 | OLD 102.9±24.7 | NEW 105.2±23.4 | gap +2.3
+  CHC: real 77 | est(act) 74.4 | OLD 60.0±25.6 | NEW 57.6±28.0 | gap -2.5
+  CHW: real 94 | est(act) 76.5 | OLD 12.6±4.5 | NEW 24.7±14.1 | gap +12.1
+  CIN: real 91 | est(act) 77.6 | OLD 55.7±22.5 | NEW 57.4±24.6 | gap +1.7
+  CLE: real 77 | est(act) 69.0 | OLD 56.9±22.4 | NEW 53.5±27.1 | gap -3.4
+  DET: real 79 | est(act) 71.9 | OLD 71.7±28.5 | NEW 76.3±30.7 | gap +4.6
+  HOU: real 75 | est(act) 65.6 | OLD 82.4±26.2 | NEW 79.0±33.8 | gap -3.4
+  KCR: real 75 | est(act) 81.4 | OLD 107.1±22.6 | NEW 102.3±28.2 | gap -4.8
+  LAD: real 86 | est(act) 82.0 | OLD 92.9±24.8 | NEW 90.2±30.3 | gap -2.7
+  MIL: real nan | est(act) 68.9 | OLD 84.5±26.0 | NEW 78.7±30.3 | gap -5.8
+  MIN: real 74 | est(act) 73.8 | OLD 46.1±20.0 | NEW 44.2±23.9 | gap -1.9
+  MON: real 85 | est(act) 80.0 | OLD 71.1±27.8 | NEW 59.2±31.4 | gap -11.9
+  NYM: real 91 | est(act) 91.8 | OLD 96.5±23.1 | NEW 94.2±28.7 | gap -2.4
+  NYY: real 67 | est(act) 61.7 | OLD 94.4±26.8 | NEW 94.3±28.5 | gap -0.1
+  OAK: real 103 | est(act) 81.6 | OLD 83.5±25.1 | NEW 76.4±30.0 | gap -7.2
+  PHI: real 77 | est(act) 74.0 | OLD 43.6±18.3 | NEW 41.2±24.4 | gap -2.4
+  PIT: real 95 | est(act) 81.9 | OLD 49.3±21.6 | NEW 52.7±27.5 | gap +3.4
+  SDP: real 75 | est(act) 72.6 | OLD 75.5±27.5 | NEW 77.0±29.5 | gap +1.5
+  SEA: real 77 | est(act) 72.2 | OLD 37.3±13.7 | NEW 41.3±22.1 | gap +4.1
+  SFG: real 85 | est(act) 74.3 | OLD 94.8±25.3 | NEW 92.1±31.6 | gap -2.7
+  STL: real 70 | est(act) 76.2 | OLD 81.8±26.3 | NEW 81.7±27.4 | gap -0.1
+  TEX: real 83 | est(act) 77.6 | OLD 56.1±21.8 | NEW 59.7±29.0 | gap +3.7
+  TOR: real 86 | est(act) 88.3 | OLD 88.2±25.6 | NEW 80.4±30.5 | gap -7.9
+[panel] 1991: building pool...
+  ATL: real 94 | est(act) 81.0 | OLD 45.6±17.4 | NEW 43.6±29.8 | gap -2.0
+  BAL: real 67 | est(act) 66.1 | OLD 38.8±16.1 | NEW 38.9±22.2 | gap +0.1
+  BOS: real 84 | est(act) 74.0 | OLD 113.0±23.6 | NEW 110.1±20.1 | gap -2.8
+  CAL: real 81 | est(act) 64.9 | OLD 95.0±24.0 | NEW 90.6±28.1 | gap -4.4
+  CHC: real 77 | est(act) 75.0 | OLD 78.4±23.3 | NEW 74.2±30.6 | gap -4.3
+  CHW: real 87 | est(act) 75.3 | OLD 36.8±16.8 | NEW 33.5±21.4 | gap -3.4
+  CIN: real 74 | est(act) 68.6 | OLD 79.4±26.1 | NEW 79.1±32.6 | gap -0.3
+  CLE: real 57 | est(act) 66.0 | OLD 34.7±19.4 | NEW 36.9±22.8 | gap +2.2
+  DET: real 84 | est(act) 79.9 | OLD 71.9±24.8 | NEW 70.3±29.0 | gap -1.6
+  HOU: real 65 | est(act) 64.1 | OLD 25.2±11.1 | NEW 30.0±21.0 | gap +4.7
+  KCR: real 82 | est(act) 81.7 | OLD 89.4±28.0 | NEW 86.5±30.6 | gap -2.9
+  LAD: real 93 | est(act) 81.7 | OLD 110.8±22.9 | NEW 108.1±23.8 | gap -2.7
+  MIL: real nan | est(act) 73.5 | OLD 63.5±26.7 | NEW 66.5±28.7 | gap +3.0
+  MIN: real 95 | est(act) 83.9 | OLD 72.3±25.4 | NEW 66.8±32.1 | gap -5.5
+  MON: real 71 | est(act) 68.6 | OLD 14.6±6.6 | NEW 24.0±14.9 | gap +9.4
+  NYM: real 77 | est(act) 80.0 | OLD 107.3±19.8 | NEW 102.1±26.6 | gap -5.3
+  NYY: real 71 | est(act) 74.7 | OLD 92.3±25.5 | NEW 92.3±26.4 | gap +0.0
+  OAK: real 84 | est(act) 75.1 | OLD 123.8±18.2 | NEW 125.4±13.0 | gap +1.6
+  PHI: real 78 | est(act) 66.3 | OLD 60.6±24.6 | NEW 62.8±31.1 | gap +2.3
+  PIT: real 98 | est(act) 93.0 | OLD 74.3±25.2 | NEW 74.7±29.5 | gap +0.4
+  SDP: real 84 | est(act) 72.9 | OLD 70.2±23.6 | NEW 66.6±31.5 | gap -3.6
+  SEA: real 83 | est(act) 66.9 | OLD 34.6±14.9 | NEW 34.4±20.4 | gap -0.2
+  SFG: real 75 | est(act) 67.1 | OLD 85.5±26.0 | NEW 82.6±27.7 | gap -2.9
+  STL: real 84 | est(act) 73.6 | OLD 48.0±19.7 | NEW 46.6±27.7 | gap -1.3
+  TEX: real 85 | est(act) 81.2 | OLD 47.8±24.2 | NEW 51.6±30.8 | gap +3.8
+  TOR: real 91 | est(act) 82.9 | OLD 55.6±20.8 | NEW 48.2±26.6 | gap -7.4
+[panel] 1992: building pool...
+  ATL: real 98 | est(act) 85.2 | OLD 75.6±26.4 | NEW 72.4±30.3 | gap -3.2
+  BAL: real 89 | est(act) 82.1 | OLD 49.2±16.4 | NEW 48.8±23.0 | gap -0.4
+  BOS: real 73 | est(act) 68.2 | OLD 110.6±26.0 | NEW 106.4±26.3 | gap -4.2
+  CAL: real 72 | est(act) 55.0 | OLD 83.5±29.2 | NEW 80.0±31.5 | gap -3.5
+  CHC: real 78 | est(act) 73.6 | OLD 70.5±25.5 | NEW 66.4±30.4 | gap -4.1
+  CHW: real 86 | est(act) 79.1 | OLD 72.8±24.7 | NEW 68.7±28.1 | gap -4.1
+  CIN: real 90 | est(act) 76.8 | OLD 72.7±28.0 | NEW 68.7±28.3 | gap -4.0
+  CLE: real 76 | est(act) 72.0 | OLD 4.8±1.1 | NEW 16.6±6.1 | gap +11.8
+  DET: real 75 | est(act) 73.1 | OLD 57.1±22.0 | NEW 54.9±27.0 | gap -2.2
+  HOU: real 81 | est(act) 75.5 | OLD 14.8±5.7 | NEW 26.6±15.6 | gap +11.8
+  KCR: real 72 | est(act) 70.4 | OLD 78.0±27.7 | NEW 79.3±31.2 | gap +1.3
+  LAD: real 63 | est(act) 66.9 | OLD 113.2±23.2 | NEW 112.0±28.7 | gap -1.2
+  MIL: real nan | est(act) 74.4 | OLD 56.1±22.3 | NEW 57.4±28.4 | gap +1.2
+  MIN: real 90 | est(act) 86.8 | OLD 64.0±23.5 | NEW 59.1±29.2 | gap -4.9
+  MON: real 87 | est(act) 79.6 | OLD 16.3±6.6 | NEW 28.0±16.0 | gap +11.7
+  NYM: real 72 | est(act) 67.2 | OLD 104.7±27.5 | NEW 108.9±26.8 | gap +4.2
+  NYY: real 76 | est(act) 76.1 | OLD 83.7±28.4 | NEW 81.1±32.6 | gap -2.6
+  OAK: real 96 | est(act) 78.4 | OLD 102.2±26.8 | NEW 103.9±27.1 | gap +1.7
+  PHI: real 70 | est(act) 77.8 | OLD 42.0±17.2 | NEW 38.7±21.6 | gap -3.3
+  PIT: real 96 | est(act) 85.5 | OLD 81.2±27.6 | NEW 80.5±31.0 | gap -0.6
+  SDP: real 82 | est(act) 81.9 | OLD 62.0±22.8 | NEW 60.9±28.0 | gap -1.1
+  SEA: real 64 | est(act) 70.4 | OLD 45.8±15.8 | NEW 41.2±21.1 | gap -4.6
+  SFG: real 72 | est(act) 67.4 | OLD 64.8±24.7 | NEW 60.9±25.6 | gap -3.9
+  STL: real 83 | est(act) 73.8 | OLD 64.7±21.1 | NEW 51.3±29.4 | gap -13.4
+  TEX: real 77 | est(act) 75.4 | OLD 64.6±23.9 | NEW 64.1±27.2 | gap -0.5
+  TOR: real 96 | est(act) 93.6 | OLD 106.9±25.4 | NEW 105.2±29.0 | gap -1.6
+[panel] 1993: building pool...
+  ATL: real 104 | est(act) 96.8 | OLD 100.0±21.0 | NEW 90.9±29.4 | gap -9.1
+  BAL: real 85 | est(act) 71.8 | OLD 63.4±22.5 | NEW 61.1±29.0 | gap -2.3
+  BOS: real 80 | est(act) 76.0 | OLD 86.8±25.0 | NEW 89.4±26.2 | gap +2.7
+  CAL: real 71 | est(act) 48.0 | OLD 58.8±21.3 | NEW 53.3±27.4 | gap -5.5
+  CHC: real 84 | est(act) 77.8 | OLD 84.3±24.0 | NEW 78.5±30.0 | gap -5.8
+  CHW: real 94 | est(act) 81.4 | OLD 93.8±25.1 | NEW 89.5±32.2 | gap -4.2
+  CIN: real 73 | est(act) 73.0 | OLD 108.3±18.8 | NEW 107.2±23.4 | gap -1.1
+  CLE: real 76 | est(act) 70.4 | OLD 8.0±3.6 | NEW 22.4±14.3 | gap +14.5
+  COL: real 67 | est(act) 65.6 | OLD 4.0±0.9 | NEW 15.4±8.0 | gap +11.5
+  DET: real 85 | est(act) 83.6 | OLD 84.7±21.1 | NEW 78.0±31.1 | gap -6.8
+  FLA: real nan | est(act) 71.4 | OLD 28.0±9.8 | NEW 30.2±19.3 | gap +2.2
+  HOU: real 85 | est(act) 87.6 | OLD 69.1±22.6 | NEW 61.5±30.6 | gap -7.6
+  KCR: real 84 | est(act) 69.1 | OLD 89.9±24.6 | NEW 92.4±26.4 | gap +2.5
+  LAD: real 81 | est(act) 79.4 | OLD 92.4±24.0 | NEW 90.4±28.1 | gap -2.0
+  MIL: real nan | est(act) 57.4 | OLD 42.7±17.9 | NEW 43.9±26.2 | gap +1.1
+  MIN: real 71 | est(act) 74.4 | OLD 61.4±20.7 | NEW 59.4±29.8 | gap -2.0
+  MON: real 94 | est(act) 76.3 | OLD 12.4±5.3 | NEW 24.1±13.2 | gap +11.7
+  NYM: real 59 | est(act) 64.2 | OLD 83.4±25.4 | NEW 82.1±30.0 | gap -1.2
+  NYY: real 88 | est(act) 74.8 | OLD 93.6±23.5 | NEW 93.9±27.0 | gap +0.3
+  OAK: real 68 | est(act) 71.0 | OLD 81.9±22.3 | NEW 80.8±27.7 | gap -1.1
+  PHI: real 97 | est(act) 94.7 | OLD 59.1±23.1 | NEW 54.5±27.6 | gap -4.6
+  PIT: real 75 | est(act) 75.7 | OLD 46.0±19.5 | NEW 48.7±26.0 | gap +2.7
+  SDP: real 61 | est(act) 70.2 | OLD 48.5±20.1 | NEW 46.1±25.8 | gap -2.5
+  SEA: real 82 | est(act) 79.3 | OLD 74.2±23.3 | NEW 71.5±28.0 | gap -2.6
+  SFG: real 103 | est(act) 84.1 | OLD 72.8±25.9 | NEW 69.9±31.6 | gap -2.9
+  STL: real 87 | est(act) 79.4 | OLD 46.1±18.4 | NEW 40.3±24.4 | gap -5.8
+  TEX: real 86 | est(act) 66.5 | OLD 84.5±24.8 | NEW 82.7±31.6 | gap -1.8
+  TOR: real 95 | est(act) 98.7 | OLD 113.9±16.5 | NEW 112.4±22.6 | gap -1.5
+[panel] 1994: building pool...
+  ATL: real 68 | est(act) 64.6 | OLD 70.3±16.7 | NEW 69.5±15.2 | gap -0.8
+  BAL: real 63 | est(act) 54.2 | OLD 61.1±16.1 | NEW 63.5±15.7 | gap +2.4
+  BOS: real 54 | est(act) 51.8 | OLD 64.0±18.0 | NEW 61.4±14.6 | gap -2.6
+  CAL: real 47 | est(act) 42.1 | OLD 23.1±7.6 | NEW 33.6±12.7 | gap +10.5
+  CHC: real 49 | est(act) 51.4 | OLD 59.5±18.5 | NEW 60.3±15.6 | gap +0.8
+  CHW: real 67 | est(act) 63.4 | OLD 64.3±13.3 | NEW 57.6±13.8 | gap -6.7
+  CIN: real 66 | est(act) 68.0 | OLD 60.2±16.4 | NEW 54.7±18.0 | gap -5.5
+  CLE: real 66 | est(act) 66.6 | OLD 47.8±15.3 | NEW 46.2±17.9 | gap -1.6
+  COL: real 53 | est(act) 55.2 | OLD 34.1±9.5 | NEW 36.5±15.1 | gap +2.4
+  DET: real 53 | est(act) 53.8 | OLD 66.5±15.5 | NEW 63.6±15.6 | gap -2.9
+  FLA: real nan | est(act) 47.9 | OLD 21.4±7.7 | NEW 32.6±11.1 | gap +11.2
+  HOU: real 66 | est(act) 62.2 | OLD 56.0±16.1 | NEW 53.8±16.6 | gap -2.2
+  KCR: real 64 | est(act) 59.8 | OLD 71.6±15.1 | NEW 71.1±13.4 | gap -0.6
+  LAD: real 58 | est(act) 58.2 | OLD 51.4±15.3 | NEW 50.1±17.6 | gap -1.3
+  MIL: real nan | est(act) 44.9 | OLD 35.7±9.2 | NEW 36.1±12.9 | gap +0.3
+  MIN: real 53 | est(act) 48.7 | OLD 44.5±14.8 | NEW 46.3±15.5 | gap +1.8
+  MON: real 74 | est(act) 67.6 | OLD 14.4±4.9 | NEW 30.5±10.4 | gap +16.2
+  NYM: real 55 | est(act) 49.0 | OLD 46.6±15.0 | NEW 50.9±15.0 | gap +4.3
+  NYY: real 70 | est(act) 56.6 | OLD 81.6±12.8 | NEW 78.8±11.8 | gap -2.8
+  OAK: real 51 | est(act) 47.4 | OLD 58.1±17.1 | NEW 54.3±16.0 | gap -3.8
+  PHI: real 54 | est(act) 51.1 | OLD 40.9±12.4 | NEW 39.6±15.3 | gap -1.3
+  PIT: real 53 | est(act) 47.3 | OLD 26.7±8.3 | NEW 35.2±12.6 | gap +8.5
+  SDP: real 47 | est(act) 57.6 | OLD 7.5±1.2 | NEW 24.6±8.4 | gap +17.0
+  SEA: real 49 | est(act) 55.0 | OLD 48.5±14.6 | NEW 44.7±18.5 | gap -3.8
+  SFG: real 55 | est(act) 48.8 | OLD 72.0±15.8 | NEW 69.1±14.5 | gap -3.0
+  STL: real 53 | est(act) 52.1 | OLD 44.3±14.6 | NEW 46.3±16.1 | gap +2.0
+  TEX: real 52 | est(act) 46.3 | OLD 53.8±16.5 | NEW 50.1±18.5 | gap -3.7
+  TOR: real 55 | est(act) 56.7 | OLD 65.7±16.8 | NEW 65.0±14.7 | gap -0.7
+[panel] 1995: building pool...
+  ATL: real 90 | est(act) 75.4 | OLD 95.4±13.6 | NEW 94.8±16.2 | gap -0.7
+  BAL: real 71 | est(act) 67.7 | OLD 89.7±15.4 | NEW 86.3±17.8 | gap -3.3
+  BOS: real 86 | est(act) 81.4 | OLD 59.2±21.0 | NEW 58.0±23.1 | gap -1.1
+  CAL: real 78 | est(act) 56.6 | OLD 57.5±21.0 | NEW 57.9±23.8 | gap +0.4
+  CHC: real 73 | est(act) 70.3 | OLD 46.0±15.6 | NEW 44.8±20.6 | gap -1.3
+  CHW: real 68 | est(act) 70.3 | OLD 90.6±18.4 | NEW 85.8±19.5 | gap -4.8
+  CIN: real 85 | est(act) 79.0 | OLD 88.8±17.7 | NEW 85.9±18.6 | gap -2.8
+  CLE: real 100 | est(act) 85.6 | OLD 74.3±20.7 | NEW 75.2±21.6 | gap +0.9
+  COL: real 77 | est(act) 78.3 | OLD 66.8±20.5 | NEW 62.4±20.7 | gap -4.4
+  DET: real 60 | est(act) 57.1 | OLD 72.1±21.1 | NEW 70.9±23.0 | gap -1.2
+  FLA: real nan | est(act) 67.5 | OLD 40.5±13.6 | NEW 39.7±18.9 | gap -0.8
+  HOU: real 76 | est(act) 83.6 | OLD 65.3±21.7 | NEW 59.4±24.7 | gap -5.8
+  KCR: real 70 | est(act) 56.0 | OLD 49.9±17.5 | NEW 48.7±24.2 | gap -1.2
+  LAD: real 78 | est(act) 77.7 | OLD 62.9±21.2 | NEW 65.1±23.3 | gap +2.3
+  MIL: real nan | est(act) 45.9 | OLD 11.7±5.3 | NEW 28.1±13.2 | gap +16.5
+  MIN: real 56 | est(act) 55.6 | OLD 45.3±14.1 | NEW 40.4±17.8 | gap -4.9
+  MON: real 66 | est(act) 74.4 | OLD 5.0±1.3 | NEW 19.1±8.8 | gap +14.2
+  NYM: real 69 | est(act) 72.7 | OLD 45.6±15.9 | NEW 48.0±18.5 | gap +2.4
+  NYY: real 79 | est(act) 66.1 | OLD 98.1±14.8 | NEW 95.3±19.0 | gap -2.7
+  OAK: real 67 | est(act) 68.7 | OLD 75.7±19.6 | NEW 71.2±22.0 | gap -4.4
+  PHI: real 69 | est(act) 64.3 | OLD 48.4±17.7 | NEW 47.8±23.0 | gap -0.6
+  PIT: real 58 | est(act) 61.7 | OLD 11.9±6.1 | NEW 24.9±10.7 | gap +13.1
+  SDP: real 70 | est(act) 67.7 | OLD 47.5±16.0 | NEW 47.4±21.4 | gap -0.1
+  SEA: real 79 | est(act) 78.4 | OLD 67.5±20.0 | NEW 61.1±22.1 | gap -6.3
+  SFG: real 67 | est(act) 61.2 | OLD 68.6±21.5 | NEW 65.3±23.8 | gap -3.3
+  STL: real 62 | est(act) 54.7 | OLD 75.2±21.1 | NEW 71.4±21.6 | gap -3.8
+  TEX: real 74 | est(act) 65.9 | OLD 72.4±19.0 | NEW 67.5±22.1 | gap -4.9
+  TOR: real 56 | est(act) 55.1 | OLD 100.4±16.7 | NEW 103.4±15.2 | gap +3.0
+[panel] 1996: building pool...
+  ATL: real 96 | est(act) 94.6 | OLD 117.3±16.9 | NEW 113.9±16.5 | gap -3.3
+  BAL: real 88 | est(act) 87.3 | OLD 116.9±13.9 | NEW 117.2±15.7 | gap +0.3
+  BOS: real 85 | est(act) 76.2 | OLD 102.6±17.0 | NEW 94.9±19.1 | gap -7.7
+  CAL: real 70 | est(act) 53.4 | OLD 54.0±18.9 | NEW 48.1±20.3 | gap -5.9
+  CHC: real 76 | est(act) 67.7 | OLD 61.6±21.4 | NEW 53.2±20.3 | gap -8.4
+  CHW: real 85 | est(act) 76.8 | OLD 107.6±16.5 | NEW 104.5±19.4 | gap -3.1
+  CIN: real 81 | est(act) 70.7 | OLD 84.4±19.4 | NEW 76.8±21.0 | gap -7.6
+  CLE: real 99 | est(act) 102.9 | OLD 114.3±18.0 | NEW 112.3±14.5 | gap -2.1
+  COL: real 83 | est(act) 82.3 | OLD 83.1±18.3 | NEW 75.2±21.2 | gap -8.0
+  DET: real 53 | est(act) 57.8 | OLD 37.1±14.9 | NEW 39.6±14.7 | gap +2.6
+  FLA: real nan | est(act) 80.3 | OLD 72.0±16.4 | NEW 60.7±19.6 | gap -11.3
+  HOU: real 82 | est(act) 85.9 | OLD 56.6±19.0 | NEW 53.2±18.9 | gap -3.4
+  KCR: real 75 | est(act) 67.3 | OLD 29.4±9.7 | NEW 32.7±14.0 | gap +3.4
+  LAD: real 90 | est(act) 79.3 | OLD 72.9±17.6 | NEW 65.5±20.7 | gap -7.5
+  MIL: real nan | est(act) 76.6 | OLD 36.7±13.4 | NEW 32.6±12.5 | gap -4.0
+  MIN: real 78 | est(act) 73.3 | OLD 18.8±5.3 | NEW 25.8±12.4 | gap +7.0
+  MON: real 88 | est(act) 75.1 | OLD 16.2±5.1 | NEW 23.8±11.8 | gap +7.5
+  NYM: real 71 | est(act) 74.6 | OLD 45.6±18.4 | NEW 44.6±17.6 | gap -0.9
+  NYY: real 92 | est(act) 87.5 | OLD 110.4±16.0 | NEW 110.3±15.2 | gap -0.1
+  OAK: real 78 | est(act) 67.4 | OLD 33.7±14.3 | NEW 35.5±14.5 | gap +1.8
+  PHI: real 67 | est(act) 68.8 | OLD 75.7±21.6 | NEW 67.2±22.0 | gap -8.5
+  PIT: real 73 | est(act) 75.6 | OLD 38.3±14.1 | NEW 36.8±13.4 | gap -1.6
+  SDP: real 91 | est(act) 96.7 | OLD 55.1±19.3 | NEW 55.2±21.1 | gap +0.1
+  SEA: real 85 | est(act) 86.0 | OLD 89.6±19.7 | NEW 84.8±22.5 | gap -4.8
+  SFG: real 68 | est(act) 58.7 | OLD 82.8±20.3 | NEW 78.6±20.0 | gap -4.3
+  STL: real 88 | est(act) 73.2 | OLD 82.8±21.2 | NEW 80.4±20.8 | gap -2.4
+  TEX: real 90 | est(act) 90.4 | OLD 90.1±19.9 | NEW 85.5±21.7 | gap -4.6
+  TOR: real 74 | est(act) 71.0 | OLD 65.2±20.6 | NEW 59.9±20.7 | gap -5.3
+[panel] 1997: building pool...
+  ANA: real 84 | est(act) 72.4 | OLD 40.5±10.2 | NEW 37.6±15.7 | gap -2.9
+  ATL: real 101 | est(act) 98.3 | OLD 100.5±19.8 | NEW 97.9±18.0 | gap -2.6
+  BAL: real 98 | est(act) 77.0 | OLD 113.0±19.0 | NEW 112.2±17.9 | gap -0.9
+  BOS: real 78 | est(act) 83.4 | OLD 83.3±20.1 | NEW 80.6±20.6 | gap -2.7
+  CHC: real 68 | est(act) 64.7 | OLD 78.7±21.4 | NEW 75.9±19.8 | gap -2.8
+  CHW: real 80 | est(act) 79.2 | OLD 113.8±18.3 | NEW 108.0±16.6 | gap -5.8
+  CIN: real 76 | est(act) 63.9 | OLD 73.8±19.9 | NEW 72.8±19.7 | gap -1.0
+  CLE: real 86 | est(act) 92.4 | OLD 108.1±20.8 | NEW 106.7±17.9 | gap -1.5
+  COL: real 83 | est(act) 86.0 | OLD 82.3±21.6 | NEW 86.6±22.0 | gap +4.3
+  DET: real 79 | est(act) 71.0 | OLD 9.5±2.2 | NEW 22.7±9.8 | gap +13.2
+  FLA: real nan | est(act) 75.8 | OLD 91.6±22.6 | NEW 91.5±21.8 | gap -0.1
+  HOU: real 84 | est(act) 85.0 | OLD 62.0±16.8 | NEW 59.0±17.9 | gap -3.0
+  KCR: real 67 | est(act) 60.4 | OLD 53.9±15.1 | NEW 51.9±19.7 | gap -2.0
+  LAD: real 88 | est(act) 89.6 | OLD 79.4±20.3 | NEW 74.2±20.8 | gap -5.1
+  MIL: real nan | est(act) 70.4 | OLD 31.2±6.7 | NEW 32.7±13.1 | gap +1.6
+  MIN: real 68 | est(act) 72.0 | OLD 37.2±8.5 | NEW 37.1±16.6 | gap -0.2
+  MON: real 78 | est(act) 69.9 | OLD 14.3±3.5 | NEW 23.6±10.1 | gap +9.3
+  NYM: real 88 | est(act) 81.5 | OLD 69.5±19.8 | NEW 70.4±18.8 | gap +0.9
+  NYY: real 96 | est(act) 81.3 | OLD 118.4±15.0 | NEW 115.9±16.4 | gap -2.5
+  OAK: real 65 | est(act) 70.5 | OLD 26.9±5.8 | NEW 30.3±11.9 | gap +3.3
+  PHI: real 68 | est(act) 68.9 | OLD 47.8±13.3 | NEW 42.8±18.4 | gap -5.1
+  PIT: real 79 | est(act) 73.3 | OLD 4.1±1.3 | NEW 12.2±4.0 | gap +8.2
+  SDP: real 76 | est(act) 76.0 | OLD 69.9±20.1 | NEW 68.7±18.5 | gap -1.2
+  SEA: real 90 | est(act) 91.9 | OLD 71.5±21.0 | NEW 72.3±20.3 | gap +0.8
+  SFG: real 90 | est(act) 70.2 | OLD 62.5±19.1 | NEW 60.5±20.2 | gap -2.0
+  STL: real 73 | est(act) 87.8 | OLD 85.9±20.0 | NEW 84.7±19.2 | gap -1.2
+  TEX: real 77 | est(act) 78.3 | OLD 100.0±21.8 | NEW 98.9±19.1 | gap -1.2
+  TOR: real 76 | est(act) 71.2 | OLD 79.1±21.4 | NEW 76.9±20.5 | gap -2.2
+[panel] 1998: building pool...
+  ANA: real 85 | est(act) 68.9 | OLD 40.1±8.9 | NEW 37.4±17.4 | gap -2.7
+  ARI: real 65 | est(act) 64.0 | OLD 54.3±14.3 | NEW 45.9±16.5 | gap -8.4
+  ATL: real 106 | est(act) 99.1 | OLD 113.7±16.2 | NEW 113.4±15.8 | gap -0.3
+  BAL: real 79 | est(act) 75.4 | OLD 123.8±12.2 | NEW 123.1±11.3 | gap -0.7
+  BOS: real 92 | est(act) 85.8 | OLD 96.9±17.0 | NEW 95.9±17.2 | gap -1.0
+  CHC: real 90 | est(act) 86.4 | OLD 85.7±18.5 | NEW 84.7±21.3 | gap -1.0
+  CHW: real 80 | est(act) 68.8 | OLD 62.6±16.8 | NEW 65.5±21.1 | gap +2.9
+  CIN: real 77 | est(act) 70.5 | OLD 22.1±6.3 | NEW 30.6±16.2 | gap +8.5
+  CLE: real 89 | est(act) 85.4 | OLD 112.3±12.5 | NEW 109.1±15.4 | gap -3.2
+  COL: real 77 | est(act) 88.5 | OLD 92.4±17.9 | NEW 93.7±21.9 | gap +1.2
+  DET: real 65 | est(act) 66.8 | OLD 29.3±8.2 | NEW 33.0±16.5 | gap +3.7
+  FLA: real nan | est(act) 57.5 | OLD 53.0±15.0 | NEW 48.4±19.0 | gap -4.6
+  HOU: real 102 | est(act) 98.0 | OLD 70.6±18.4 | NEW 67.8±19.6 | gap -2.9
+  KCR: real 72 | est(act) 61.5 | OLD 63.3±17.3 | NEW 56.2±18.5 | gap -7.1
+  LAD: real 83 | est(act) 73.9 | OLD 73.3±17.0 | NEW 67.5±19.5 | gap -5.8
+  MIL: real 74 | est(act) 68.9 | OLD 56.3±13.5 | NEW 50.7±19.6 | gap -5.5
+  MIN: real 70 | est(act) 68.1 | OLD 34.0±8.4 | NEW 33.6±16.3 | gap -0.4
+  MON: real 65 | est(act) 62.8 | OLD 6.8±2.2 | NEW 12.9±4.1 | gap +6.2
+  NYM: real 88 | est(act) 79.3 | OLD 94.4±17.0 | NEW 96.9±19.4 | gap +2.5
+  NYY: real 114 | est(act) 85.1 | OLD 118.7±15.6 | NEW 114.4±16.2 | gap -4.3
+  OAK: real 74 | est(act) 65.9 | OLD 17.4±5.6 | NEW 26.7±11.8 | gap +9.2
+  PHI: real 75 | est(act) 74.0 | OLD 49.3±12.2 | NEW 47.9±19.6 | gap -1.4
+  PIT: real 69 | est(act) 68.2 | OLD 6.1±2.2 | NEW 14.1±4.9 | gap +8.0
+  SDP: real 98 | est(act) 88.5 | OLD 83.7±20.9 | NEW 83.6±20.6 | gap -0.1
+  SEA: real 76 | est(act) 89.9 | OLD 102.7±13.6 | NEW 98.4±19.6 | gap -4.3
+  SFG: real 89 | est(act) 84.6 | OLD 70.1±17.8 | NEW 63.4±20.6 | gap -6.7
+  STL: real 83 | est(act) 89.6 | OLD 98.1±17.5 | NEW 94.1±18.4 | gap -4.1
+  TBD: real nan | est(act) 60.1 | OLD 40.6±9.0 | NEW 37.5±18.7 | gap -3.1
+  TEX: real 88 | est(act) 94.7 | OLD 106.5±15.4 | NEW 108.8±15.8 | gap +2.2
+  TOR: real 88 | est(act) 89.2 | OLD 91.7±18.2 | NEW 90.8±19.1 | gap -0.9
+[panel] 1999: building pool...
+  ANA: real 70 | est(act) 64.1 | OLD 67.3±15.7 | NEW 63.7±23.0 | gap -3.6
+  ARI: real 100 | est(act) 93.1 | OLD 106.3±16.6 | NEW 104.0±20.0 | gap -2.3
+  ATL: real 103 | est(act) 88.9 | OLD 97.3±21.2 | NEW 103.3±20.9 | gap +6.0
+  BAL: real 78 | est(act) 60.1 | OLD 119.1±17.1 | NEW 119.5±17.3 | gap +0.4
+  BOS: real 94 | est(act) 79.6 | OLD 84.9±20.3 | NEW 82.4±22.7 | gap -2.5
+  CHC: real 67 | est(act) 66.9 | OLD 89.2±19.1 | NEW 89.3±22.7 | gap +0.0
+  CHW: real 75 | est(act) 70.1 | OLD 15.2±5.4 | NEW 25.7±13.6 | gap +10.4
+  CIN: real 96 | est(act) 80.6 | OLD 43.2±8.8 | NEW 43.1±19.4 | gap -0.1
+  CLE: real 97 | est(act) 87.9 | OLD 114.4±15.8 | NEW 113.4±16.8 | gap -1.0
+  COL: real 72 | est(act) 69.3 | OLD 88.0±18.0 | NEW 86.7±25.3 | gap -1.3
+  DET: real 69 | est(act) 70.8 | OLD 47.6±9.6 | NEW 44.4±19.6 | gap -3.1
+  FLA: real nan | est(act) 60.0 | OLD 6.2±1.7 | NEW 19.9±14.2 | gap +13.7
+  HOU: real 97 | est(act) 92.3 | OLD 64.2±15.5 | NEW 60.2±22.4 | gap -4.0
+  KCR: real 64 | est(act) 69.3 | OLD 14.7±5.7 | NEW 24.5±11.8 | gap +9.8
+  LAD: real 77 | est(act) 76.7 | OLD 122.6±15.7 | NEW 119.7±16.9 | gap -2.9
+  MIL: real 74 | est(act) 71.6 | OLD 62.5±12.8 | NEW 57.2±23.4 | gap -5.3
+  MIN: real 63 | est(act) 57.6 | OLD 9.4±4.0 | NEW 20.3±11.6 | gap +11.0
+  MON: real 68 | est(act) 74.2 | OLD 5.9±1.4 | NEW 15.2±9.2 | gap +9.3
+  NYM: real 97 | est(act) 93.5 | OLD 98.1±20.1 | NEW 96.1±24.2 | gap -2.0
+  NYY: real 98 | est(act) 74.5 | OLD 130.0±11.6 | NEW 126.7±16.0 | gap -3.3
+  OAK: real 87 | est(act) 86.3 | OLD 17.7±5.5 | NEW 27.3±15.3 | gap +9.6
+  PHI: real 77 | est(act) 74.3 | OLD 37.0±7.8 | NEW 35.9±16.4 | gap -1.0
+  PIT: real 78 | est(act) 72.8 | OLD 13.1±5.1 | NEW 25.4±15.5 | gap +12.3
+  SDP: real 74 | est(act) 65.7 | OLD 59.3±12.1 | NEW 56.2±23.3 | gap -3.2
+  SEA: real 79 | est(act) 77.7 | OLD 75.8±16.3 | NEW 66.9±25.0 | gap -8.9
+  SFG: real 86 | est(act) 63.5 | OLD 66.7±16.1 | NEW 61.9±23.1 | gap -4.8
+  STL: real 75 | est(act) 66.5 | OLD 65.9±14.6 | NEW 57.8±19.9 | gap -8.1
+  TBD: real nan | est(act) 62.0 | OLD 54.4±11.1 | NEW 50.0±25.5 | gap -4.5
+  TEX: real 95 | est(act) 90.6 | OLD 110.9±17.5 | NEW 111.5±18.7 | gap +0.6
+  TOR: real 84 | est(act) 79.9 | OLD 63.6±15.5 | NEW 63.3±24.8 | gap -0.2
+
+=== control summary (1988-1999, 330 team-seasons) ===
+mean wins gap NEW-OLD: -0.55 (across-team std 5.06)
+estimator r(actual_est, real W) = 0.803
+mean NEW-arm roster overlap with actual: 3.3%
+mean OLD-arm roster overlap with actual: 3.3%
+[panel] 1993: building pool...
+Traceback (most recent call last):
+  File "/home/ag/repos/moneyball-counterfactual/src/run_experiment.py", line 234, in main
+    run_season(year, args.seeds, force=args.force)
+  File "/home/ag/repos/moneyball-counterfactual/src/run_experiment.py", line 104, in run_season
+    byc = (byc.groupby("playerID")[["AB", "H", "2B", "3B", "HR", "BB",
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ag/repos/moneyball-counterfactual/.venv/lib/python3.11/site-packages/pandas/core/groupby/generic.py", line 2938, in __getitem__
+    return super().__getitem__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ag/repos/moneyball-counterfactual/.venv/lib/python3.11/site-packages/pandas/core/base.py", line 223, in __getitem__
+    raise KeyError(f"Columns not found: {str(bad_keys)[1:-1]}")
+KeyError: "Columns not found: '2B', '3B'"
+[ERROR] 1993: "Columns not found: '2B', '3B'"
+[panel] 1994: building pool...
+Traceback (most recent call last):
+  File "/home/ag/repos/moneyball-counterfactual/src/run_experiment.py", line 234, in main
+    run_season(year, args.seeds, force=args.force)
+  File "/home/ag/repos/moneyball-counterfactual/src/run_experiment.py", line 104, in run_season
+    byc = (byc.groupby("playerID")[["AB", "H", "2B", "3B", "HR", "BB",
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ag/repos/moneyball-counterfactual/.venv/lib/python3.11/site-packages/pandas/core/groupby/generic.py", line 2938, in __getitem__
+    return super().__getitem__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ag/repos/moneyball-counterfactual/.venv/lib/python3.11/site-packages/pandas/core/base.py", line 223, in __getitem__
+    raise KeyError(f"Columns not found: {str(bad_keys)[1:-1]}")
+KeyError: "Columns not found: '2B', '3B'"
+[ERROR] 1994: "Columns not found: '2B', '3B'"
+[panel] 1995: building pool...
+Traceback (most recent call last):
+  File "/home/ag/repos/moneyball-counterfactual/src/run_experiment.py", line 234, in main
+    run_season(year, args.seeds, force=args.force)
+  File "/home/ag/repos/moneyball-counterfactual/src/run_experiment.py", line 104, in run_season
+    byc = (byc.groupby("playerID")[["AB", "H", "2B", "3B", "HR", "BB",
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ag/repos/moneyball-counterfactual/.venv/lib/python3.11/site-packages/pandas/core/groupby/generic.py", line 2938, in __getitem__
+    return super().__getitem__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ag/repos/moneyball-counterfactual/.venv/lib/python3.11/site-packages/pandas/core/base.py", line 223, in __getitem__
+    raise KeyError(f"Columns not found: {str(bad_keys)[1:-1]}")
+KeyError: "Columns not found: '2B', '3B'"
+[ERROR] 1995: "Columns not found: '2B', '3B'"
+[panel] 1996: building pool...
+Traceback (most recent call last):
+  File "/home/ag/repos/moneyball-counterfactual/src/run_experiment.py", line 234, in main
+    run_season(year, args.seeds, force=args.force)
+  File "/home/ag/repos/moneyball-counterfactual/src/run_experiment.py", line 104, in run_season
+    byc = (byc.groupby("playerID")[["AB", "H", "2B", "3B", "HR", "BB",
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ag/repos/moneyball-counterfactual/.venv/lib/python3.11/site-packages/pandas/core/groupby/generic.py", line 2938, in __getitem__
+    return super().__getitem__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ag/repos/moneyball-counterfactual/.venv/lib/python3.11/site-packages/pandas/core/base.py", line 223, in __getitem__
+    raise KeyError(f"Columns not found: {str(bad_keys)[1:-1]}")
+KeyError: "Columns not found: '2B', '3B'"
+[ERROR] 1996: "Columns not found: '2B', '3B'"
+[panel] 1997: building pool...
+Traceback (most recent call last):
+  File "/home/ag/repos/moneyball-counterfactual/src/run_experiment.py", line 234, in main
+    run_season(year, args.seeds, force=args.force)
+  File "/home/ag/repos/moneyball-counterfactual/src/run_experiment.py", line 104, in run_season
+    byc = (byc.groupby("playerID")[["AB", "H", "2B", "3B", "HR", "BB",
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ag/repos/moneyball-counterfactual/.venv/lib/python3.11/site-packages/pandas/core/groupby/generic.py", line 2938, in __getitem__
+    return super().__getitem__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ag/repos/moneyball-counterfactual/.venv/lib/python3.11/site-packages/pandas/core/base.py", line 223, in __getitem__
+    raise KeyError(f"Columns not found: {str(bad_keys)[1:-1]}")
+KeyError: "Columns not found: '2B', '3B'"
+[ERROR] 1997: "Columns not found: '2B', '3B'"
+[panel] 1998: building pool...
+Traceback (most recent call last):
+  File "/home/ag/repos/moneyball-counterfactual/src/run_experiment.py", line 234, in main
+    run_season(year, args.seeds, force=args.force)
+  File "/home/ag/repos/moneyball-counterfactual/src/run_experiment.py", line 104, in run_season
+    byc = (byc.groupby("playerID")[["AB", "H", "2B", "3B", "HR", "BB",
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ag/repos/moneyball-counterfactual/.venv/lib/python3.11/site-packages/pandas/core/groupby/generic.py", line 2938, in __getitem__
+    return super().__getitem__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ag/repos/moneyball-counterfactual/.venv/lib/python3.11/site-packages/pandas/core/base.py", line 223, in __getitem__
+    raise KeyError(f"Columns not found: {str(bad_keys)[1:-1]}")
+KeyError: "Columns not found: '2B', '3B'"
+[ERROR] 1998: "Columns not found: '2B', '3B'"
+[panel] 1999: building pool...
+Traceback (most recent call last):
+  File "/home/ag/repos/moneyball-counterfactual/src/run_experiment.py", line 234, in main
+    run_season(year, args.seeds, force=args.force)
+  File "/home/ag/repos/moneyball-counterfactual/src/run_experiment.py", line 104, in run_season
+    byc = (byc.groupby("playerID")[["AB", "H", "2B", "3B", "HR", "BB",
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ag/repos/moneyball-counterfactual/.venv/lib/python3.11/site-packages/pandas/core/groupby/generic.py", line 2938, in __getitem__
+    return super().__getitem__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ag/repos/moneyball-counterfactual/.venv/lib/python3.11/site-packages/pandas/core/base.py", line 223, in __getitem__
+    raise KeyError(f"Columns not found: {str(bad_keys)[1:-1]}")
+KeyError: "Columns not found: '2B', '3B'"
+[ERROR] 1999: "Columns not found: '2B', '3B'"
+
+=== control summary (1993-1999, 200 team-seasons) ===
+mean wins gap NEW-OLD: -0.41 (across-team std 5.47)
+estimator r(actual_est, real W) = 0.844
+mean NEW-arm roster overlap with actual: 3.1%
+mean OLD-arm roster overlap with actual: 3.1%

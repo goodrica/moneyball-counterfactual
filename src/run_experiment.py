@@ -38,9 +38,9 @@ BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(BASE, "data")
 RESULTS = os.path.join(BASE, "results")
 
-LAH_TO_BWAR = {"CHA": "CHW", "CHN": "CHC", "KCA": "KCR", "LAN": "LAD",
-               "NYA": "NYY", "NYN": "NYM", "SDN": "SDP", "SFN": "SFG",
-               "SLN": "STL", "TBA": "TBR", "WAS": "WSN"}
+LAH_TO_BWAR = {"CHA": "CHW", "CHN": "CHC", "FLA": "MIA", "KCA": "KCR",
+               "LAN": "LAD", "NYA": "NYY", "NYN": "NYM", "SDN": "SDP",
+               "SFN": "SFG", "SLN": "STL", "TBA": "TBR", "WAS": "WSN"}
 
 
 def _teams_bwar_ids(year):
@@ -76,10 +76,10 @@ def _player_stat_vectors(year, bat, pit):
     return bat_runs, pit_runs, pit_ipouts
 
 
-def run_season(year, seeds=100, pay=None):
+def run_season(year, seeds=100, pay=None, force=False):
     out_path = os.path.join(RESULTS, f"panel_year_{year}.csv")
     ros_path = os.path.join(RESULTS, f"panel_year_{year}_rosters.csv")
-    if os.path.exists(out_path):
+    if os.path.exists(out_path) and not force:
         print(f"[skip] {year}: cached")
         return pd.read_csv(out_path)
 
@@ -224,20 +224,29 @@ def main():
     ap.add_argument("--panel", default="2010-2024")
     ap.add_argument("--seeds", type=int, default=100)
     ap.add_argument("--control", action="store_true")
+    ap.add_argument("--force", action="store_true",
+                    help="re-run even if per-year cache exists")
     args = ap.parse_args()
 
     y0, y1 = map(int, args.panel.split("-"))
-    frames = []
     for year in range(y0, y1 + 1):
         try:
-            frames.append(run_season(year, args.seeds))
+            run_season(year, args.seeds, force=args.force)
         except Exception as e:
             import traceback; traceback.print_exc()
             print(f"[ERROR] {year}: {e}", flush=True)
-    if not frames:
-        return 1
-    panel = pd.concat(frames, ignore_index=True)
+    # merge cached per-year files, filtered to this run's range, so re-running
+    # a subset never truncates the panel (control and panel ranges are disjoint)
+    import glob as _glob
     tag = "control" if args.control else "panel"
+    files = sorted(f for f in _glob.glob(os.path.join(RESULTS, "panel_year_[0-9]*.csv"))
+                   if "_rosters" not in f)
+    if not files:
+        return 1
+    all_y = pd.concat([pd.read_csv(f) for f in files], ignore_index=True)
+    panel = all_y[all_y.year.between(y0, y1)]
+    if panel.empty:
+        return 1
     panel.to_csv(os.path.join(RESULTS, f"{tag}_team_season.csv"), index=False)
 
     print(f"\n=== {tag} summary ({y0}-{y1}, {len(panel)} team-seasons) ===")
