@@ -46,6 +46,30 @@ POS_BONUS = {"C":1.0,"SS":1.0,"2B":0.5,"3B":0.5,"OF":0.3,"1B":0.0,"DH":-0.5,"P":
 LEAGUE_MIN = 0.55e6
 ARMS = ("old", "new")
 
+# MLB minimum salary by year — used to impute missing bWAR salaries for
+# pre-arbitration players (bWAR leaves those blank, not zero). Without this,
+# rookies like 2015 Kris Bryant ($507.5k, 5.4 WAR) appear FREE in the NEW arm
+# and the optimizer stacks them: 30 teams drafting the same young stars.
+MIN_SALARY = {
+    1988: 68_600, 1989: 80_000, 1990: 86_400, 1991: 99_000, 1992: 100_000,
+    1993: 100_000, 1994: 109_000, 1995: 109_000,
+    2010: 400_000, 2011: 414_000, 2012: 480_000, 2013: 490_000,
+    2014: 500_000, 2015: 507_500, 2016: 507_500, 2017: 507_500,
+    2018: 545_000, 2019: 555_000, 2020: 563_500, 2021: 570_500,
+    2022: 687_500, 2023: 720_000, 2024: 795_000,
+}
+
+
+def impute_salaries(bat, pit, year):
+    """Fill missing salaries with that year's MLB minimum (bWAR omits
+    pre-arbitration players). In-place; returns (n_bat_filled, n_pit_filled)."""
+    minsal = MIN_SALARY.get(year, 500_000)
+    nb = int(bat["salary"].isna().sum())
+    np_ = int(pit["salary"].isna().sum())
+    bat["salary"] = bat["salary"].fillna(minsal).clip(lower=minsal)
+    pit["salary"] = pit["salary"].fillna(minsal).clip(lower=minsal)
+    return nb, np_
+
 
 def _primary_positions(year, min_g=10):
     f = pd.read_csv(os.path.join(DATA, "lahman", "Fielding.csv"))
@@ -133,6 +157,11 @@ def build_pool(year):
     nmap = people.set_index("playerID")["name"].to_dict()
     bat["name"] = bat["player_ID"].map(nmap)
     pit["name"] = pit["player_ID"].map(nmap)
+
+    # impute missing (pre-arb) salaries BEFORE price_new uses them
+    nb, npi = impute_salaries(bat, pit, year)
+    bat["price_new"] = bat["salary"]
+    pit["price_new"] = pit["salary"]
     return bat, pit
 
 
@@ -159,10 +188,12 @@ def _eligible(posset, primary, need):
     return primary == need
 
 
-def optimize(bat, pit, budget, rng, price_col, jitter=0.01):
+def optimize(bat, pit, budget, rng, price_col, jitter=0.01, free_b=None, free_p=None):
     """Baseline-then-upgrade: fill every slot with the cheapest eligible player,
     then repeatedly apply the single best WAR-positive upgrade the budget allows.
-    Always returns a full 26-man roster under budget."""
+    Always returns a full 26-man roster under budget.
+    free_b/free_p: boolean availability masks (league-wide exclusive draft);
+    players taken by earlier teams in the same seed are unselectable."""
     price_b = bat[price_col].fillna(LEAGUE_MIN).values * rng.normal(1, jitter, len(bat))
     price_p = pit[price_col].fillna(LEAGUE_MIN).values * rng.normal(1, jitter, len(pit))
     war_b = bat["WAR"].fillna(0.0).values
@@ -170,6 +201,8 @@ def optimize(bat, pit, budget, rng, price_col, jitter=0.01):
     pos_b = bat["primary_pos"].values
     possets = bat["pos_set"].values
     is_sp = pit["is_sp"].values
+    avail_b = np.ones(len(bat), dtype=bool) if free_b is None else free_b
+    avail_p = np.ones(len(pit), dtype=bool) if free_p is None else free_p
 
     def elig(i, pos):
         return _eligible(possets[i], pos_b[i], pos)
@@ -180,19 +213,19 @@ def optimize(bat, pit, budget, rng, price_col, jitter=0.01):
     for pos, n in BAT_COVERAGE.items():
         for _ in range(n):
             cand = [i for i in range(len(bat))
-                    if i not in chosen_b and elig(i, pos)]
+                    if i not in chosen_b and avail_b[i] and elig(i, pos)]
             if cand:
                 chosen_b.add(min(cand, key=lambda i: price_b[i]))
     for _ in range(MIN_SP):
-        cand = [i for i in range(len(pit)) if i not in chosen_p and is_sp[i]]
+        cand = [i for i in range(len(pit)) if i not in chosen_p and avail_p[i] and is_sp[i]]
         if cand:
             chosen_p.add(min(cand, key=lambda i: price_p[i]))
     for _ in range(N_BAT - len(chosen_b)):
-        cand = [i for i in range(len(bat)) if i not in chosen_b]
+        cand = [i for i in range(len(bat)) if i not in chosen_b and avail_b[i]]
         if cand:
             chosen_b.add(min(cand, key=lambda i: price_b[i]))
     for _ in range(N_PIT - len(chosen_p)):
-        cand = [i for i in range(len(pit)) if i not in chosen_p]
+        cand = [i for i in range(len(pit)) if i not in chosen_p and avail_p[i]]
         if cand:
             chosen_p.add(min(cand, key=lambda i: price_p[i]))
 
@@ -228,7 +261,7 @@ def optimize(bat, pit, budget, rng, price_col, jitter=0.01):
             counts_wo = cur_counts - elig_mat[out_i]
             allowed = slack + price_b[out_i]
             ok = (counts_wo[None, :] + elig_mat) >= need_n[None, :]
-            cand = np.where(ok.all(axis=1) & ~in_b & (price_b <= allowed))[0]
+            cand = np.where(ok.all(axis=1) & ~in_b & avail_b & (price_b <= allowed))[0]
             if len(cand) == 0:
                 continue
             gains = war_b[cand] - war_b[out_i]
@@ -242,7 +275,7 @@ def optimize(bat, pit, budget, rng, price_col, jitter=0.01):
             cur_sp = int(is_sp[list(chosen_p)].sum() - is_sp[out_i])
             allowed = slack + price_p[out_i]
             ok = is_sp | (cur_sp >= MIN_SP)
-            cand = np.where(ok & ~in_p & (price_p <= allowed))[0]
+            cand = np.where(ok & ~in_p & avail_p & (price_p <= allowed))[0]
             if len(cand) == 0:
                 continue
             gains = war_p[cand] - war_p[out_i]

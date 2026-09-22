@@ -35,13 +35,14 @@ RS_CAL = 0.920
 RA_CAL = 1.097
 
 
-def calibrate_season(bat_all, pit_all, real_R_mean, real_RA_mean, games=162.0):
+def calibrate_season(bat_all, pit_all, real_R_mean, real_RA_mean, games=162.0, n_teams=30.0):
     """Return (rs_cal, ra_cal) aligning estimator means to real league means.
 
     bat_all: all hitter rows for the season (league-wide), pit_all: all pitchers.
-    This uses only aggregate stat data (legal: descriptive, not outcome-fitting).
+    This uses only aggregate stat data (descriptive, not outcome-fitting).
+    n_teams: teams in that season's league (28 pre-1993, 30 from 1998).
     """
-    n_teams = 30.0
+    n_teams = float(n_teams)
     rs_mean = float(batter_runs(bat_all).sum()) / n_teams
     ip_outs_total = float(pit_all["IPouts"].sum())
     if ip_outs_total <= 0:

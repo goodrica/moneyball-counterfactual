@@ -36,10 +36,12 @@ MIRROR_SHA = "a0b6f52"   # 2026-09-10 snapshot
 LAHMAN_FILES = {
     "Batting.csv":       "core/Batting.csv",
     "Pitching.csv":      "core/Pitching.csv",
+    "Fielding.csv":      "core/Fielding.csv",
     "Teams.csv":         "core/Teams.csv",
     "People.csv":        "core/People.csv",
     "Salaries.csv":      "contrib/Salaries.csv",
     "AwardsPlayers.csv": "contrib/AwardsPlayers.csv",
+    "SeriesPost.csv":    "core/SeriesPost.csv",
 }
 
 BWAREARLY_MIN = 1985   # Lahman training window start
@@ -130,6 +132,7 @@ def data_contract():
     # 1. Lahman files exist and have expected row counts
     bat_la  = pd.read_csv(os.path.join(LAH_DIR, "Batting.csv"))
     pit_la  = pd.read_csv(os.path.join(LAH_DIR, "Pitching.csv"))
+    fld_la  = pd.read_csv(os.path.join(LAH_DIR, "Fielding.csv"))
     teams   = pd.read_csv(os.path.join(LAH_DIR, "Teams.csv"))
     people  = pd.read_csv(os.path.join(LAH_DIR, "People.csv"))
     sal_la  = pd.read_csv(os.path.join(LAH_DIR, "Salaries.csv"))
@@ -137,6 +140,7 @@ def data_contract():
 
     check("Lahman Batting rows > 100K",  len(bat_la)  > 100_000)
     check("Lahman Pitching rows > 45K",  len(pit_la)  >  45_000)
+    check("Lahman Fielding rows > 100K", len(fld_la) > 100_000)
     check("Lahman Teams rows > 2K",      len(teams)   >   2_000)
     check("Lahman People rows > 15K",    len(people)  >  15_000)
     check("Lahman Salaries rows > 25K",  len(sal_la)  >  25_000)
